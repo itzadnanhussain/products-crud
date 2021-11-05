@@ -37,4 +37,4 @@ Route::post('/delete-single-product',[ProductController::class , 'Delete_Single_
 |  
 */
 
-Route::get('/export-products',[ExportController::class , 'Export_Product_Data']);
+Route::any('/export-products',[ExportController::class , 'Export_Product_Data']);

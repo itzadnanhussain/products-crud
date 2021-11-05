@@ -3,18 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
+use  App\Exports\ExportProduct;
 
 class ExportController extends Controller
 {
     ///Export_Product_Data
-    public function Export_Product_Data()
-    {
-
+    public function Export_Product_Data(Request $request){
+        return Excel::download(new ExportProduct, 'products.xlsx');
     }
 
 }
 
-
-// git remote add origin https://github.com/itzadnanhussain/products-crud.git
-// git branch -M main
-// git push -u origin main
+ 

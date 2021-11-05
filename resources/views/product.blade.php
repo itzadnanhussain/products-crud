@@ -9,8 +9,8 @@
                         <div class="col-md-4 col-xs-12">
                             <div class="template-demo">
                                 <a  href="{{url('export-products')}}">
-                                    <button type="button" class="btn btn-primary btn-lg btn-block">
-                                       Export Product
+                                    <button type="button" class="btn btn-warning btn-lg btn-block">
+                                       Export Products
                                     </button>
                                 </a>
                             </div>
